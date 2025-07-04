@@ -2,7 +2,6 @@ const Dashboard = {
   async render() {
     return `
       <div class="dashboard-header">
-        <h4>Dashboard <span>/ Device Location</span></h4>
       </div>
 <div class="summary-cards">
   <div class="summary-card">
@@ -36,7 +35,6 @@ const Dashboard = {
 
 
       <div class="data-section mt-4">
-        <h5>Data Decoded</h5>
         
         <div class="judul">
           <div class="judul"> Message Type </div>
@@ -59,22 +57,40 @@ const Dashboard = {
             <thead>
               <tr>
                 <th>No</th>
-                <th>message_type</th>
-                <th>state</th>
-                <th>battery_voltage</th>
-                <th>battery_level</th>
-                <th>ble_rx_count</th>
-                <th>param_16</th>
-                <th>param_242</th>
+                <th>IMEI</th>
+                <th>ID Container</th>
+                <th>Type</th>
+                <th>Timestamp</th>
+                <th>Battery Voltage</th>
+                <th>Battery Level</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td>1</td><td>Heartbeat</td><td>33800000</td><td>21.8</td><td>100</td><td>1234</td><td>-</td><td>-</td></tr>
-              <tr><td>2</td><td>Parameter Report</td><td>33800000</td><td>21.9</td><td>98</td><td>2345</td><td>69840</td><td>-</td></tr>
-              <tr><td>3</td><td>Registration</td><td>33800001</td><td>22.0</td><td>95</td><td>4523</td><td>-</td><td>-</td></tr>
-              <tr><td>4</td><td>Heartbeat</td><td>33800000</td><td>21.9</td><td>100</td><td>5678</td><td>-</td><td>-</td></tr>
-              <tr><td>5</td><td>Registration</td><td>33800001</td><td>22.0</td><td>100</td><td>4567</td><td>-</td><td>-</td></tr>
-            </tbody>
+              <tr><td>1</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>2</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>3</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>4</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>5</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>6</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>7</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>8</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>9</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>10</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>11</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>12</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>13</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>14</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>15</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>16</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>17</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>18</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>19</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>20</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>21</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>23</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>24</td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              <tr><td>25/td><td>324293472937</td><td>TAKU 245267-0</td><td>Heartbeat</td><td>2025-07-03  15:42:42</td><td>34 V</td><td>99%</td></tr>
+              </tbody>
           </table>
         </div>
 

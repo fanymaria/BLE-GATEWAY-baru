@@ -241,3 +241,154 @@ body {
   font-weight: bold;
   color: #1f5cbf;
 }
+
+.table-responsive {
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Device Info Header */
+.device-info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  border-radius: 20px 20px 0 0;
+  padding: 16px 32px 16px 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin-bottom: 16px;
+}
+
+.device-info-header-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #071655;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.device-info-header-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.device-info-header-actions .btn {
+  border: none;
+  border-radius: 12px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.device-info-header-actions .btn-add {
+  background: #2563eb;
+  color: #fff;
+}
+
+.device-info-header-actions .btn-excel {
+  background: #10b981;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Device Location Header */
+.device-location-header {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  border-radius: 20px 20px 0 0;
+  padding: 18px 32px 18px 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin-bottom: 16px;
+}
+
+.device-location-header-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #071655;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.device-form {
+  background: #f7f7f7;
+  border-radius: 24px;
+  padding: 32px 40px 32px 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  color: #2953c6;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
+.form-input {
+  background: #ececec;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  outline: none;
+}
+
+.form-file {
+  background: #bdbdbd;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
+.form-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.btn {
+  font-size: 18px;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  border-radius: 10px;
+  padding: 12px 36px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-save {
+  background: #2946a8;
+  color: #fff;
+}
+
+.btn-cancel {
+  background: #fff;
+  color: #333;
+  border: 2px solid
+}
