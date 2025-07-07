@@ -125,7 +125,6 @@ body {
   height: 80px; /* atau sesuaikan */
 }
 
-
 /* Filters */
 .filters {
   display: flex;
@@ -140,9 +139,9 @@ body {
 /* Tambahkan wrapper untuk tanggal agar bisa atur jarak antar grup */
 .filters .date-group {
   display: flex;
-  gap: 21px; /* tidak ada jarak antar tanggal */
-  margin-left: 500px;
-  margin-right: 100px;
+  gap: 20px; /* tidak ada jarak antar tanggal */
+  margin-left: 380px;
+  margin-right: 5px;
 }
 
 .filters select,
@@ -155,6 +154,7 @@ body {
 .filters button {
   padding: 8px 14px;
   border-radius: 6px;
+  font-size: 13px;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -172,6 +172,13 @@ body {
 .filters .btn-excel {
   background-color: #2DB674;
   color: white;
+}
+
+.icon-btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+  vertical-align: middle;
 }
 
 /* Table */
@@ -239,7 +246,7 @@ body {
   font-size: 16px; /* Ukuran font kecil */
   padding: 4px;
   align-items: center;
-  margin-left: 510px;
+  margin-left: 390.5px;
   font-weight: bold;
 }
 
@@ -441,3 +448,4 @@ body {
   color: #333;
   border: 2px solid
 }
+

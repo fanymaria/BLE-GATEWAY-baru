@@ -36,7 +36,33 @@ const Dashboard = {
 
 </div>
 
-      <div class="table-responsive mt-3">
+
+      <div id="data-table-section" class="table-responsive mt-4">
+        <div class="judul">
+          <div class="judul"> Device IMEI </div>
+          <div class="start"> Start Date </div>
+          <div class="end"> End Date </div>
+        </div>
+        <div id="graphic-section" class="data-section mt-4" style="display: none;">
+  <h5>Graphic Data</h5>
+  <p>Visualisasi data akan ditampilkan di sini.</p>
+  <!-- Tambahkan chart atau visualisasi sesuai kebutuhan -->
+</div>
+
+        <div class="filters">
+          <select>
+            <option>All Message Type</option>
+          </select>
+          <div class="date-group">
+          <input type="date" value="" />
+          <input type="date" value="" />
+           </div>
+          <button class="btn btn-success">Filter Date</button>
+          <button class="btn btn-secondary">Reset Date</button>
+          <button class="btn btn-excel">
+          <img src="icons/download.png" alt="Download" class="icon-btn">Excel</button>
+        </div>
+        <div class="table-responsive mt-3">
           <table class="table table-bordered">
             <thead>
               <tr>

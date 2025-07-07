@@ -9,7 +9,8 @@ const DashboardManagement = {
         <div class="device-info-header-title">Device Info</div>
         <div class="device-info-header-actions">
           <button class="btn btn-add" id="addDeviceBtn">+ Add Device</button>
-          <button class="btn btn-excel">Eksport Exel <span></span></button>
+          <button class="btn btn-excel">
+          <img src="icons/download.png" alt="Download" class="icon-btn">Excel</button>
         </div>
       </div>
 
