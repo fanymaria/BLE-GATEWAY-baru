@@ -1,11 +1,17 @@
 import Dashboard from '../components/Dashboard';
 
 const DashboardPage = {
+  _tableData: [],
+
   async render() {
     let tableData = [];
 
     try {
       const response = await fetch('/api/scanner');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       const jsonData = await response.json();
 
       console.log('HASIL API:', jsonData);
@@ -22,21 +28,36 @@ const DashboardPage = {
       console.error('ERROR FETCH:', error);
     }
 
+    // simpan data full
+    this._tableData = tableData;
+
+    // render page pertama (page 1)
+    return this._renderDashboardPage(1);
+  },
+
+  async _renderDashboardPage(page) {
+    const perPage = 10;
+    const totalPages = Math.ceil(this._tableData.length / perPage);
+
+    const startIndex = (page - 1) * perPage;
+    const endIndex = startIndex + perPage;
+    const pagedData = this._tableData.slice(startIndex, endIndex);
+
     const data = {
       summary: {
-        totalDevices: tableData.length,
-        selectedDevice: tableData.length,
+        totalDevices: this._tableData.length,
+        selectedDevice: pagedData.length,
         voltage: 0,
         battery: 0,
         lastUpdate: 'N/A',
         status: 'N/A',
       },
-      tableData,
+      tableData: pagedData,
       pagination: {
-        currentPage: 1,
-        totalPages: 1,
-        hasNext: false,
-        hasPrev: false,
+        currentPage: page,
+        totalPages: totalPages,
+        hasPrev: page > 1,
+        hasNext: page < totalPages,
       },
       filters: {
         messageTypes: ['All Message Type'],
@@ -49,7 +70,18 @@ const DashboardPage = {
   },
 
   async afterRender() {
-    await Dashboard.afterRender();
+    const onPageChange = async (page) => {
+      console.log('Page Change:', page);
+      const html = await this._renderDashboardPage(page);
+      document.querySelector('#mainContent').innerHTML = html;
+      await this.afterRender();
+    };
+
+    await Dashboard.afterRender(
+      null,         // onFilterChange
+      onPageChange, // onPageChange
+      null          // onExcelExport
+    );
   },
 };
 

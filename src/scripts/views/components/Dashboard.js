@@ -88,7 +88,7 @@ const Dashboard = {
           <button class="btn btn-success" id="filter-btn">Filter Date</button>
           <button class="btn btn-secondary" id="reset-btn">Reset Date</button>
           <button class="btn btn-excel" id="excel-btn">
-            <img src="icons/download.png" alt="Download" class="icon-btn">Excel
+            <img src="public/icons/download.png" class="icon-btn">Excel
           </button>
         </div>
         
